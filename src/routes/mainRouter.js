@@ -5,6 +5,8 @@ const mainController = require('../controllers/mainController')
 
 router.get('/', mainController.notesList);
 
+router.get('/search', mainController.search);
+
 router.post('/', mainController.createNote);
 
 router.get('/:idNote', mainController.getNote);

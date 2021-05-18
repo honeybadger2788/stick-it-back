@@ -7,13 +7,12 @@ router.get('/', mainController.notesList);
 
 router.get('/search', mainController.search);
 
-router.post('/', mainController.createNote);
+router.post('/create', mainController.createNote);
+
+router.delete('/delete/:idNote', mainController.deleteNote);
+
+router.patch('/patch/:idNote', mainController.updateNote);
 
 router.get('/:idNote', mainController.getNote);
-
-router.delete('/:idNote', mainController.deleteNote);
-
-router.patch('/:idNote', mainController.updateNote);
-
 
 module.exports = router;

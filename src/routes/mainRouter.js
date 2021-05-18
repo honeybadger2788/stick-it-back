@@ -9,7 +9,7 @@ router.get('/search', mainController.search);
 
 router.post('/create', mainController.createNote);
 
-router.delete('/delete/:idNote', mainController.deleteNote);
+router.get('/delete/:idNote', mainController.deleteNote);
 
 router.patch('/update/:idNote', mainController.updateNote);
 

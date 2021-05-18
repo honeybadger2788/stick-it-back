@@ -9,9 +9,9 @@ router.get('/search', mainController.search);
 
 router.post('/create', mainController.createNote);
 
-router.delete('/delete/:idNote', mainController.deleteNote);
+router.get('/delete/:idNote', mainController.deleteNote);
 
-router.patch('/patch/:idNote', mainController.updateNote);
+router.post('/update/:idNote', mainController.updateNote);
 
 router.get('/:idNote', mainController.getNote);
 
